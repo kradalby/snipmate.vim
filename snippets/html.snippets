@@ -1,4 +1,29 @@
 # Some useful Unicode entities
+
+# bootstrap html
+snippet boot
+	<!doctype html>
+
+		<html lang="en">
+		    <head>
+		        <meta charset="utf-8">
+		    
+		        <title>${1:`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`}</title>
+		        <meta name="description" content="${2:`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`}">
+		        <meta name="author" content="${3: Kristoffer}">
+		    
+		        <link rel="stylesheet" href="css/${4:style.css}">
+		    
+		        <!--[if lt IE 9]>
+		        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		        <![endif]-->
+		    </head>
+		    
+		    <body>
+
+		    </body>
+		</html>
+
 # Non-Breaking Space
 snippet nbs
 	&nbsp;
